@@ -7,18 +7,13 @@ export default function Home() {
       <div className="pointer-events-none absolute -top-40 left-1/2 -z-10 h-[480px] w-[700px] -translate-x-1/2 rounded-full bg-gradient-to-tr from-indigo-500/15 via-purple-500/10 to-cyan-500/15 blur-3xl" />
 
       <div className="mx-auto w-full max-w-4xl text-center">
-        {/* Top pill badge */}
-        <div className="inline-flex items-center gap-2 rounded-full border border-zinc-200/80 bg-white/60 px-3.5 py-1 text-xs font-medium text-zinc-700 shadow-sm backdrop-blur dark:border-zinc-800 dark:bg-zinc-900/60 dark:text-zinc-300">
-          <span className="h-2 w-2 rounded-full bg-indigo-500 animate-pulse" />
-          Calculator Suite
-        </div>
 
         {/* Main Heading */}
-        <h1 className="mt-6 text-3xl font-extrabold tracking-tight sm:text-5xl">
+        <h1 className="text-3xl font-extrabold tracking-tight sm:text-5xl">
           What would you like to calculate?
         </h1>
         <p className="mx-auto mt-4 max-w-xl text-base text-zinc-600 sm:text-lg dark:text-zinc-400">
-          Select one of the tools below to get started. Quickly calculate your semester CGPA or switch to the standard calculator for everyday math.
+          Select one of the tools below to get started. 
         </p>
 
         {/* 2 Selection Cards */}
