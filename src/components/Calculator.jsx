@@ -1,11 +1,25 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 
 export default function Calculator() {
+  const [display, setDisplay] = useState("0");
+
+  // The first number you entered before clicking + or -
+  const [prevValue, setPrevValue] = useState(null);
+
+  // The operation symbol (+, -, ×, ÷)
+  const [operation, setOperation] = useState(null);
+
+  // Tells the calculator: "start a fresh number after clicking an operator"
+  const [waitingForNewValue, setWaitingForNewValue] = useState(false);
+
   return (
     <div className="mx-auto w-full max-w-sm rounded-3xl border border-zinc-200 bg-white p-6 shadow-xl dark:border-zinc-800 dark:bg-zinc-900">
       {/* display */}
       <div className="mb-6 rounded-2xl bg-zinc-50 p-4 text-right border border-zinc-100 dark:border-zinc-800 dark:bg-zinc-950">
-        <div className="h-6 text-sm font-medium text-zinc-400">12+2</div>
+        <div className="h-6 text-sm font-medium text-zinc-400">
+          {prevValue !== null && `${prevValue} ${operation || ""}`}
+        </div>
         <div className="text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
           17
         </div>
