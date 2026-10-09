@@ -99,6 +99,47 @@ export default function Home() {
               <span>Open Normal Calculator &rarr;</span>
             </div>
           </Link>
+
+          {/* Card 3: Character Counter Calculator */}
+          <Link
+            href="/charecter-calculator"
+            className="group relative flex flex-col justify-between overflow-hidden rounded-2xl border border-zinc-200/80 bg-white p-8 text-left shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-cyan-400 hover:shadow-xl hover:shadow-cyan-500/10 dark:border-zinc-800 dark:bg-zinc-900/70 dark:hover:border-cyan-500/80"
+          >
+            <div className="pointer-events-none absolute -right-10 -top-10 h-32 w-32 rounded-full bg-cyan-500/10 blur-2xl transition-all duration-500 group-hover:bg-cyan-500/20" />
+
+            <div>
+              {/* Image Icon */}
+              <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-cyan-50 p-2.5 ring-1 ring-cyan-500/20 transition-transform duration-300 group-hover:scale-110 dark:bg-cyan-950/60 dark:ring-cyan-500/30">
+                <img
+                  src="/icons/calculator.svg"
+                  alt="Normal Calculator"
+                  className="h-full w-full object-contain"
+                />
+              </div>
+
+              <h2 className="mt-6 text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
+                Character Counter Calculator
+              </h2>
+              <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+                Count your character of any text you paste on the box
+              </p>
+
+              {/* Tags */}
+              <div className="mt-4 flex flex-wrap gap-1.5">
+                <span className="rounded-md bg-zinc-100 px-2.5 py-1 text-xs font-medium text-zinc-600 dark:bg-zinc-800 dark:text-zinc-300">
+                  Standard Math
+                </span>
+                <span className="rounded-md bg-zinc-100 px-2.5 py-1 text-xs font-medium text-zinc-600 dark:bg-zinc-800 dark:text-zinc-300">
+                  Quick Keypad
+                </span>
+              </div>
+            </div>
+
+            {/* Action link */}
+            <div className="mt-8 flex items-center font-semibold text-cyan-600 transition-colors group-hover:text-cyan-700 dark:text-cyan-400 dark:group-hover:text-cyan-300">
+              <span>Open Character Counter Calculator &rarr;</span>
+            </div>
+          </Link>
         </div>
       </div>
     </div>
